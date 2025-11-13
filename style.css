@@ -1,0 +1,96 @@
+body {
+  
+  background-color: lightblue;
+   /* background-color: rgb(3, 3, 21);*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* nav aqui */
+nav  {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  font-weight: bold;
+  color: #8B4513;
+}
+
+nav i {
+  margin-right: 5px;
+}
+
+
+
+
+
+.container {
+    background-color: rgb(2, 6, 58);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.7); /* efecto 3D */
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Titulos y textos */
+h1, p {
+    color: white;
+    margin: 10px 0;
+}
+
+
+.tarjeta {
+    background-color: rgb(196, 252, 252);
+    border: 4px double rgb(0, 243, 211);
+    border-radius: 12px;
+    padding: 15px;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 10px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.4); /* sombra de la tarjeta */
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(10, 198, 126);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+span{
+    
+    color: rgb(218, 8, 8);
+    font-weight: bold;
+}
+
+small{
+    color: white;
+}
+
+small {
+    color: white;
+    display: flex;
+    margin-top: 20px;
+}

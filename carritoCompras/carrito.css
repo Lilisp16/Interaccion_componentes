@@ -1,0 +1,143 @@
+/*  Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+body{
+   background-color: #f0f0f0;
+ 
+}
+
+/* nav aqui */
+header {
+  display: flex;           /* hace que header sea flex */
+  justify-content: center; /* centra horizontalmente */
+  align-items: center;     /* centra verticalmente */
+  padding: 20px;
+}
+nav  {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  font-weight: bold;
+  color: #8B4513;
+}
+
+nav i {
+  margin-right: 5px;
+}
+
+
+/*  Título principal */
+h1 {
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Contenedor de productos */
+.productos {
+  display: flex;
+  flex-wrap: wrap;          /* permite que bajen de línea */
+  gap: 20px;                /* espacio entre tarjetas */
+  justify-content: center;  /* centramos las tarjetas */
+  padding: 20px;
+
+}
+
+/*  Tarjeta de producto */
+.producto {
+  background-color: white;
+  border: 2px solid #08dac9;
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+  width: 250px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 20px rgba(0,0,0,0.4);
+}
+
+.producto button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #08dac9;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.producto button:hover {
+  background-color: #06b3a2;
+}
+
+/*  Sección de totales */
+.totales {
+  text-align: center;
+  padding: 15px;
+  font-size: 18px;
+  border-top: 2px solid #ccc;
+}
+
+/*  Botón Vaciar carrito */
+.vaciar {
+  background-color: #f0f0f0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.boton-vaciar {
+  padding: 10px 20px;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.boton-vaciar:hover {
+  background-color: #e60000;
+}
+
+/*  Footer */
+header small {
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+  color: #333;
+}
+
+img {
+  width: 140px;
+}
+
+p{
+  color: #454444;
+}
+
+span{
+  font-size: 40px;
+  font-weight: bold;
+  color: blue;
+}
+
+.nombre {
+  font-size: 20px;
+  color: #04695f;
+}

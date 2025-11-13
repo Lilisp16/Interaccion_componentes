@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="carrito.css">
+    <title>Carrito de Compras</title>
+
+</head>
+
+<body>
+<header>
+  <nav>
+    <a href="../index.html"><i class="fas fa-poll"></i> Encuesta</a>
+    <a href="carrito.html"><i class="fas fa-shopping-cart"></i> Carrito de Compras</a>
+</nav>
+</header>
+
+
+<h1>Decoraciones para el hogar</h1>
+    <section class="productos">
+        
+    <div class="producto">
+      <img src="./img/repisa1.jpg" alt="repisa">
+      <p class="nombre">Repisa madera </p>
+      <span>$9.4</span>
+      <button onclick="agregarAlCarrito('Repisa 2 Niveles madera', 9.4)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="./img/repisa2.jpg" alt="repisa">
+      <p class="nombre">Repisa vidrio </p>
+      <span>$8.2</span>
+      <button onclick="agregarAlCarrito('Repisa Esquinera vidrio', 8.2)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="./img/repisa3.jpg" alt="repisa">
+      <p class="nombre">Repisa Rejilla </p>
+      <span>$4.5</span>
+      <button onclick="agregarAlCarrito('Repisa Esquinero Rejilla', 4.5)">Agregar al carrito</button>
+    </div>
+  </section>
+
+  <!--  Totales -->
+  <section class="totales">
+    <p>Total de ítems: <span id="total-items">0</span></p>
+    <p>Total precio: $<span id="total-precio">0</span></p>
+  </section>
+
+  <!--  Botón vaciar -->
+  <div class="vaciar">
+    <button class="boton-vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
+  </div>
+
+  <header>
+    <small>© Todos los derechos reservados by Lili S.</small>
+  </header>
+
+        <script src="carrito.js"></script>
+</body>
+
+</html>
